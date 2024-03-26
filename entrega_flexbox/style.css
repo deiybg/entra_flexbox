@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primarycolor: #333333;
+    --secondarycolor: #eb5757;
+    --hightlight: #ffffff;
+    --spacing:40px;
+    --fontfamily:"Poppins", sans-serif;
+    --colorbottomletter:#f2f2f2;
+    --spacingshort:20px;
+    --spacingmini:10px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    font-family: var(--fontfamily);
+    min-height: 80vh;
+}
+header{
+
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px;
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+
+header .logotype{
+    width: 160px;
+    
+}
+
+header ul{
+
+    list-style-type:  none;
+    display: flex;
+    gap:var(--spacing);
+}
+
+header a{
+
+    text-decoration: none;
+    color: var(--primarycolor);
+    font-weight: 500;
+   
+}
+
+a.question{
+
+    color: var(--secondarycolor);
+    
+}
+a i{
+    color: var(--secondarycolor);
+    
+}
+
+header div{
+   display: flex;
+   gap: var(--spacing);
+   align-items: center;
+
+}
+
+
+header div .buttom{
+    background-color: var(--secondarycolor);
+    color: var(--colorbottomletter);
+    height: 70px;
+    width: 140px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 45px;
+
+}
+
+header .menu{
+    display: none;
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+
+header{
+    font-size: 12px;
+    justify-content:space-between ;
+}
+header .logotype{
+    width: 80px;
+}
+
+header ul{
+    gap: var(--spacingshort);
+}
+header div{
+    gap:var(--spacingshort);
+}
+header .icon{
+    width: 30px;
+}
+header div .buttom{
+    height: 35px;
+    width: 70px;
+    border-radius: 17px;
+    line-height: 35px;
+}
+}
+
+@media (max-width: 768px){
+
+header{
+    font-size: 10px;
+    padding: 10px;
+    justify-content:space-between ;
+}
+
+header .logotype{
+    width: 80px;
+}
+
+header ul{
+    gap:var(--spacingmini);
+}
+header .icon{
+    width: 30px;
+}
+
+header div{
+    gap: var(--spacingmini);
+}
+header div .buttom{
+
+    height: 35px;
+    width: 70px;
+    border-radius: 17px;
+    line-height: 35px;
+
+}
+}
+
+@media (max-width:510px) {
+    header .menu{
+        display: block;
+        width: 60px;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    header div{
+        display: none;
+    }
+    
+}
+
+#container {
+
+    min-height: 80vh;
+    border: 2px green solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px red solid;
+}
+
+.firstpart{
+
+display: flex;
+justify-content: space-around;
+align-items: center;
+min-height: 40vh;
+}
+
+.firstpart p{
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--primarycolor);
+}
+
+.firstpart li {
+    list-style-type: none;
+   
+}
+aside ul{
+    
+    display: flex;
+    justify-content: space-evenly;
+   min-height: max-content;
+}
+.firstpart a{
+    text-decoration: none;
+    
+    
+}
+
+.firstpart li:first-child{
+    background-color: var(--secondarycolor);
+    height: 80px;
+    width: 200px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 45px;
+   
+
+}
+
+.firstpart ul > li:first-child a{
+color:var(--colorbottomletter);
+font-size: 20px;
+font-weight: 700;
+}
+
+
+
+.firstpart ul > li:last-child a{
+color: var(--primarycolor);
+font-size: 20px;
+font-weight: 700;
+height: 80px;
+width: 200px;
+line-height: 80px;
+text-align: center;
+
+
+}
+
+.fa-play{
+    font-size: 26px;
+    margin-right: 12px;
+    color: var(--secondarycolor);
+    
+}
+
+.firstsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+    padding: 28px;
+    gap: var(--spacingmini);
+    z-index: 1;
+   
+}
+
+.firstsection h1{
+
+    font-size: 100px;
+    font-weight: 800 ;
+}
+
+.firstsection span{
+    color: var(--secondarycolor);
+}
+
+.secondsection img{
+    min-width: 80vh;
+   
+}
+
+.secondpart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    gap: var(--spacingmini);
+}
+
+.secondpart h3{
+    color: var(--secondarycolor);
+    align-items: center;
+    font-size: 28px;
+    letter-spacing: 4px;
+}
+
+.secondpart h2{
+    color: var(--primarycolor);
+    font-weight: 800;
+    font-size: 60px;
+   
+}
+
+.secondpart img{
+
+    width: 90vw;
+    
+}
+
