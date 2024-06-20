@@ -21,7 +21,6 @@ body {
   font-family: var(--fontfamily);
   min-height: 80vh;
   width: 100%;
-  
 }
 header {
   min-height: 10vh;
@@ -224,10 +223,9 @@ header .menu {
     padding: 20px;
   }
 
-  footer    img {
+  footer img {
     height: 30px;
     width: 830px;
-    
   }
 }
 
@@ -241,7 +239,6 @@ header .menu {
   min-height: 60vh;
   width: 100%;
   padding: 10px;
-  
 }
 
 .firstpart p {
@@ -343,8 +340,6 @@ aside ul {
   padding: 80px;
   gap: var(--spacingmini);
   width: 100%;
-  
-  
 }
 
 .secondpart h3 {
@@ -371,12 +366,10 @@ footer {
   justify-content: space-between;
   padding: var(--spacingmini);
   width: 100%;
-  
 }
 
 footer ul {
   max-width: 80vw;
-  
 }
 
 footer li,
@@ -413,7 +406,4 @@ footer div {
   font-size: 30px;
   justify-content: space-evenly;
   gap: var(--spacingmini);
-  
 }
-
-
